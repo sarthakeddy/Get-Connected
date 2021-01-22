@@ -31,9 +31,9 @@ var chatSchema = mongoose.Schema({
     created: {type: Date, default: Date.now}
 })
 var Chat = mongoose.model('Message', chatSchema);
-app.use(express.static(path.join(__dirname + '/assets'))); //allows html file to reference stylesheet "helloworld.css" that is stored in ./css directory
+app.use(express.static(path.join(__dirname + '/front'))); //allows html file to reference stylesheet "helloworld.css" that is stored in ./css directory
 app.get('/', function (req, res) {
-    res.sendfile(__dirname + '/assets/index.html');
+    res.sendfile(__dirname + '/front/index.html');
 })
 
 
