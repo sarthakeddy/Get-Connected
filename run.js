@@ -8,6 +8,8 @@ var express = require('express'),
     users = {};
 server.listen(3000);
 
+
+
 mongoose.connect('mongodb://localhost/chat_db',function (err) {
     if (err){
     	console.log("err");
@@ -41,8 +43,6 @@ var rooms = ['room1'];
 
 
 io.sockets.on('connection',function (socket) {
-
-
 
     Chat.find({}, function (err, docs) {
         if (err) throw err;
