@@ -89,6 +89,8 @@ io.sockets.on('connection',function (socket) {
 
     socket.on('send message', function (data, callback) {
         var msg = data.trim();
+        if(msg.length == 0)
+            return;
         if(msg.substr(0,3) === '/w '){
             msg = msg.substr(3);
             var ind = msg.indexOf(' ');
