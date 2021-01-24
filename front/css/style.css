@@ -3,9 +3,17 @@ body {
   background-color:#a6e1ec;
 }
 #chat {
-    height: 500px;
+    height: 750px;
     margin-bottom: 10px;
     overflow-y: scroll;
+}
+#message {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: both;
+    min-height: 40px;
+    line-height: 20px;
 }
 #contentWrap{
     display:none;
