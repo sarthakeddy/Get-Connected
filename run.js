@@ -10,7 +10,7 @@ server.listen(3000);
 
 
 
-mongoose.connect('mongodb://localhost/chat_db',function (err) {
+mongoose.connect('mongodb://localhost/chat_db', { useNewUrlParser: true, useUnifiedTopology: true }, function (err) {
     if (err){
     	console.log("err");
         console.log(err);
