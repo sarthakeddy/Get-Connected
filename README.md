@@ -22,7 +22,7 @@ Make sure you have Node.js and npm installed.
     4. Start the web application.
         <pre>node run.js</pre>
     5. Application runs at port 2356. Open the application at 
-        <pre>localhost:2356</pre>
+        <pre>http://localhost:2356/</pre>
 
 ## Screenshots
 ![Starting Page](front/img/login.png "First")
