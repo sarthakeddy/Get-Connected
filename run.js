@@ -6,9 +6,7 @@ var express = require('express'),
     mongoose = require('mongoose'),
  bodyParser = require('body-parser'),
     users = {};
-server.listen(3000);
-
-
+server.listen(2356);
 
 mongoose.connect('mongodb://localhost/chat_db', { useNewUrlParser: true, useUnifiedTopology: true }, function (err) {
     if (err){
