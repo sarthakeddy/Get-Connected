@@ -2852,10 +2852,12 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #151616;
+  border-color: #000000;
 }
-.btn-success:hover,
+.btn-success:hover {
+  background:rgba(0, 0, 0, .05);
+},
 .btn-success:focus,
 .btn-success:active,
 .btn-success.active,

@@ -11,10 +11,10 @@
     <script src="/socket.io/socket.io.js"></script>
 </head>
 <body>
-
+    <div id="whole-body">
     <div id="nickWrap">
         <div class="pen-title">
-           <h1>Chat System</h1>  <span> <i class='fa fa-paint-brush'></i> <i class='fa fa-code'></i></span>
+           <h1 style="color: antiquewhite;">Chat System</h1>  <span> <i class='fa fa-paint-brush'></i> <i class='fa fa-code'></i></span>
         </div>
         <!-- Form Module-->
         <div class="module form-module">
@@ -27,7 +27,7 @@
 
                 <form id="setNick">
                     <input id="nickName" type="text" placeholder="Username" required/>
-                    <button>Login</button>
+                    <button onclick="changebg()">Login</button>
                 </form>
             </div>
             <div class="form">
@@ -41,7 +41,6 @@
                 </form>
             </div>
         </div>
-
     </div>
 
     <!-- chat -->
@@ -51,8 +50,8 @@
         <p id="private_name"></p>
 
         <div class="col-md-8">
-            <div class="panel panel-info">
-                <div class="panel-heading">
+            <div class="panel panel-info" style="border-color: rgb(255, 255, 255);">
+                <div class="panel-heading" style="color: cornsilk; background-color: #0e0d0d;">
                      CHAT HISTORY
                 </div>
                 <div class="panel-body">
@@ -70,7 +69,7 @@
                     <div class="input-group" id="sending">
                         <input placeholder="Enter a message:" id="message" type='text' required/>
                         <span class="input-group-btn">
-                            <button id="send" class="btn btn-info" type="button">SEND</button>
+                            <button id="send" class="btn btn-info" type="button" style=" background-color: #1f1b1b; border-color: cornsilk;" >SEND</button>
                         </span>
                     </div>
                 </div>
@@ -84,9 +83,9 @@
         </div>-->
         </div>
 
-        <div class="col-md-4">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
+        <div class="col-md-4" >
+            <div class="panel panel-primary" style="border-color: rgb(255, 255, 255);">
+                <div class="panel-heading" style=" background-color: #1f1b1b;">
                     ONLINE USERS
                 </div>
                 <div class="panel-body">
@@ -108,8 +107,8 @@
         </div>
 
         <div class="col-md-4">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
+            <div class="panel panel-primary" style="border-color: rgb(255, 255, 255);">
+                <div class="panel-heading" style=" background-color: #1f1b1b;">
                     Group Chat
                 </div>
                 <div class="panel-body">
@@ -119,7 +118,7 @@
                                 <div id="rooms"></div>
                                 <div id="room creation"></div>
                                 <!-- <input type="button" class="btn btn-info" id="roombutton" value="+ Create Group"  style="margin-bottom: 10px"/> -->
-                                <input id="roomname" style="width:200px;" />
+                                <input id="roomname" style="width:200px;" style=" background-color: #130e0e;"/>
 
                             </div>
                 </div>
@@ -129,6 +128,7 @@
         </div>
 
     </div>
+    </div>
     <script>
         console.log("start");
         var input = document.getElementById("message");
@@ -137,6 +137,9 @@
                 document.getElementById("send").click();
             }
         });
+        function changebg() {
+            document.getElementsById("whole-body").style.backgroundImage = "url(../img/chat-background.png)";
+        }
         console.log("end");
     </script>
     <script src = "script.js"></script>
