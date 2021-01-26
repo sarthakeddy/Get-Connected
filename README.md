@@ -6,7 +6,7 @@ This web app is built using Node.js, Express, Socket.io, MongoDB and RESTful web
   <li>Uses Express as the application Framework.</li> 
   <li>Real-time communication between a client and a server using Socket.io.</li>
   <li>Uses MongoDB, Mongoose  for storing messages and querying data.</li>
-  <li>Uses RESTful web service for serve different platforms</li> 
+  <li>Uses RESTful web service to serve different platforms</li> 
 
 # Installation
 
